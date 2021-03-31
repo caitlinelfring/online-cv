@@ -1,16 +1,16 @@
-{% assign languages = site.data.data.sidebar.languages %}
+{% assign languages = site.data.resume.sections | find: "name", "Skills" %}
 {% if languages %}
 <div class="languages-container container-block">
 
   <h2 class="container-block-title">
-    Languages
+    Skills
   </h2>
 
   <ul class="list-unstyled interests-list">
-    {%for language in languages %}
+    {%for language in languages.entries %}
     <li>
-      {{ language.idiom }}
-      <span class="lang-desc">({{ language.level }})</span>
+      {{ language.what }}
+      <span class="lang-desc">{{ language.description }}</span>
     </li>
     {% endfor %}
   </ul>

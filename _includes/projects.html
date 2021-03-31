@@ -1,4 +1,4 @@
-{% assign projects = site.data.data.projects %}
+{% assign projects = site.data.resume.sections | find: "name", "Projects" %}
 {% if projects %}
 <section class="section projects-section">
 
@@ -7,7 +7,7 @@
       <i class="fas fa-circle fa-stack-2x"></i>
       <i class="fas fa-archive fa-stack-1x fa-inverse"></i>
     </span>
-    {{ projects.title }}
+    Projects
   </h2>
 
   {% if projects.intro %}
@@ -16,16 +16,21 @@
   </div><!--//intro-->
   {% endif %}
 
-  {% for project in projects.assignments %}
+  {% for project in projects.entries %}
     <div class="item">
 
       <span class="project-title">
-        <a href="{{ project.link }}">{{ project.title }}</a>
+        <a href="{{ project.url }}">{{ project.what }}</a>
       </span>
 
-      {% if project.tagline %}
-      - <span class="project-tagline">{{ project.tagline }}</span>
+      {% if project.description %}
+      - <span class="project-tagline">{{ project.description }}</span>
       {% endif %}
+      <ul>
+      {% for p in project.details %}
+      <li>{{ p }}</li>
+      {% endfor %}
+      </ul>
 
     </div><!--//item-->
   {% endfor %}

@@ -1,0 +1,140 @@
+name: Caitlin Elfring
+title: Site Reliability Engineer
+
+# Contact information
+contact:
+  webpage:
+    name: resume
+    url: https://caitlinelfring.github.io/resume/resume.pdf
+  email: celfring@protonmail.com
+  github:
+    name: caitlinelfring
+    url: https://github.com/caitlinelfring
+  linkedin:
+    name: caitlinelfring
+    url: https://linkedin.com/in/caitlinelfring
+
+# Summary (introduction, opening paragraph)
+summary:
+  "Versatile Site Reliability Engineer with extensive systems and software engineering background, skilled at leading lean technical teams."
+
+sections:
+  - name: Experience
+    entries:
+      - what: Staff Engineer - Site Reliability (Tech Lead)
+        when: March 2020 - Present
+        where: Rent The Runway, Inc.
+        location: New York, NY
+        details:
+          - Provide technical leadership for all ongoing and future Infrastructure projects. Ensure projects are scoped and prioritized appropriately for both long and short term goals through mentoring and milestone setting.
+          - Contribute to the technical roadmap by translating business objectives and requirements into deliverable projects.
+          - Coordinate with internal and external stakeholders to gather requirements around existing and future projects. Negotiate roadmap priorities and deliverables to satisfy alignment for cross-team dependencies.
+          - Member of cross-functional "Cloud Planning" working group tasked with mapping out the path to migrate from Rackspace to GCP.
+          - Provide consulting for engineering teams on ways to improve their application reliability and scalability.
+          - Architect GitOps workflows and pipelines for deploying applications to Kubernetes, as well as syncing abilities between on-premise environments to streamline migration efforts.
+          - Implemented Change Management automation using GitHub Actions and Jira Automation.
+          - Lead team to create Disaster Recovery environment and procedure in GCP and Kubernetes, decreasing Recovery Time Objective from 1 week to 2 hours.
+          - Mentoring 2-4 engineers, with the goal of technical development and improving confidence.
+      - what: Senior Engineer
+        when: March 2019 - March 2020
+        details:
+          - Lead engineer in building an isolated, reproducible environment in Kubernetes (GKE), running 50+ services, identical to production, in order to provide a stable environment for pre-production test suites.
+          - Initiated and completed a proof-of-concept that services can run within docker images and communicate with each other using Docker Swarm. This went on to be the foundation for the migration from VMWare to Kubernetes.
+          - Successfully led a team of 6 engineers to build an MVP of critical services running in Kubernetes within 2 weeks.
+          - Built automated pipelines to build docker images for all services and applications, within existing pipelines, without disrupting existing workflows.
+          - Spearheaded the reproducible architecture of Jenkins, using Ansible, Configuration-as-Code, and Jenkins Pipelines, ensuring every change made to Jenkins would be peer-reviewed and codified, eliminating the amount of manual configuration, and enabling other engineers to be self-sufficient.
+          - Lead team of 3 junior engineers to migrate Jenkins jobs from static jobs into Declarative pipelines.
+          - Architected Jenkins system to be PCI Compliant.
+          - Initiated the "SRE Architecture Discussion" fortnightly meeting to make sure team stays connected on how daily decisions impact long-term goals.
+      - what: Engineer III
+        when: June 2018 - March 2019
+        details:
+          # https://docs.google.com/document/d/11jiONoYy4fbFhlpOsa548OBdA_znB2wEurkTOPLg9NA/edit
+          - Standardized build and deployment pipelines for 5 ruby/node applications, leading to quicker development cycles and reduced deployment failures.
+          - Project lead in revamping warehouse management system development and deploy process.
+          - Assisted in migration from Zeus LB to F5 LB by ensuring all services were able to drain connections during deploy by upgrading and testing Ansible playbooks.
+          - Implemented branch deployment strategy for java micro-service architecture, enabling developers to catch bugs and errors earlier in the release pipeline.
+          - Maintained and improved home-grown tool for standardizing Jenkins release and deploy jobs.
+      - what: Site Reliability Engineer
+        when: June 2015 - June 2018
+        where: Gracious Eloise, Inc.
+        location: New York, NY
+        details:
+          - Implemented an automated deploy procedure for the Handwriting.io API using CircleCI and Elastic Beanstalk, reducing deployment times by 50%.
+          - Re-architected ScribbleChat’s browser-based client-side WebGL renderer into a server-based API by utilizing AWS GPU instances and headless Chrome browser sessions to provide ScribbleChat effects within other platforms such as Facebook Messenger, Kik, and Skype.
+          - Automated ScribbleChat iOS build and release using Fastlane to reduce the complexity and overhead of Apple App Store releases.
+          - Performed in a full-stack engineer role, including website building and implementing new iOS/server/API features.
+          - Developed automation and deployment utilities using Bash, Python, and Golang.
+          - Implemented Docker across all applications to maintain consistency between development and production environments.
+          - Implemented Business Continuity Plan in preparation for any outage to cloud services providers.
+          - Maintained and regularly ran load-test scripts to ensure applications were scaled appropriately.
+          - Reduced costs of the systems operations budget by 30% within the first 6 months.
+          - Developed and open-sourced a chat-bot in Golang with integrations to Slack and command line, which is used to simplify deployments and provide transparency amongst team members.
+
+      - what: Systems Engineer
+        when: July 2010 - May 2015
+        where: Sesame Workshop
+        location: New York, NY
+        details:
+          - Responsible for the successful implementation and deployment of an EMC Isilon NAS to serve over 250TB of digital assets from 46 Sesame Street seasons and other works, as well as designed the underlying systems architecture for the Digital Asset Management System used to ingest, transcode, and distribute all assets.
+          - Lead engineer in design, implementation, and migration of 50 TB of data from Novell Netware file system to EMC VNX CIFS servers, resulting in increased uptime from 70% to 100% and overall reliability and speed of file services.
+          - Designed and executed the decommissioning of outdated core (Directory, DNS, DHCP, GPO) services software by transitioning from Novell to Microsoft products, resulting in the reduction of $100,000 in annual licensing and support fees while increasing stability of critical systems.
+          - Lead engineer responsible for maintenance and uptime of entire server infrastructure of 250 servers and appliances, SAN storage, backup systems, and support for all applications.
+          - Manage EMC VNX 5500/5700 storage systems and Brocade SAN switches and provide recommendations for utilization with new systems and projects.
+          - Provide recommendations and direction for all Systems Engineering projects to the VP of Information Systems to ensure a stable, highly available systems infrastructure.
+      - what: Associate Systems Administrator / Desktop Administrator / Support Specialist
+        details:
+          - Researched, developed, and implemented disaster recovery plan for Exchange, VMware, and CIFS file shares using EMC and VMware technology to provide continuation of IT services and fulfill requirement for an automated business continuity plan.
+          - Architected and implemented ESXi 4.1 to 5.1 upgrade, migration to new storage system, and design and build out of business continuity plan using VMware’s Site Recovery Manager, reduced physical operating costs by completing the physical-to-virtual conversion of all servers that did not require a physical footprint to VMware ESXi.
+          - Deployed Microsoft Exchange 2010 and utilized Powershell to automate the migration of 600 e-mail accounts from Novell Groupwise, and architected the process to maintain continuous mail flow between both mail systems throughout the duration of the migration.
+          - Packaged and deployed corporate applications with Novell ZENWorks Configuration Management to all workstations.
+
+  - name: Projects
+    entries:
+      - what: woke
+        url: https://github.com/get-woke/woke
+        description: Detects non-inclusive language in your source code.
+        details:
+          - Woke is a tool that scans your source code to find usages of insensitive, non-inclusive language and provides you with alternative suggestions.
+          - It can be run as a part of your CI suite, or as a pre-commit hook.
+          - Woke helps by moving this burden off the individual to suggest or enforce inclusive language and onto an automated check.
+          - Built In NYC - How Rent The Runway Got 'Woke' - https://www.builtinnyc.com/spotlight/2020/01/27/how-rent-the-runway-got-woke
+      - what: PowerTimer
+        url: https://powertimer.app
+        description: Workout Timer iOS App
+        details:
+          - PowerTimer is free workout timer app that not only lets you time your workout, but also lets you time your rest.
+          - Available on the iOS App Store
+
+  - name: Skills
+    entries:
+      - what: "Tools"
+        description: "Docker, Ansible, Kubernetes, Helm, Terraform, Istio, Jenkins, GitHub Actions, HashiCorp Vault"
+      - what: "Cloud Providers"
+        description: "GCP, AWS"
+      - what: "Software Languages"
+        description: "Golang, Python, Bash, NodeJS"
+
+  - name: Blog Posts
+    entries:
+      - what: "Adopting Inclusive Language in Tech at RTR"
+        url: https://dresscode.renttherunway.com/blog/woke
+      - what: "woke — Check for insensitive language in your source code"
+        url: https://medium.com/@caitlinelfring/woke-437880c3de64?source=friends_link&sk=b724835d6d6f0e5a58711a4f95223d0d
+
+  # # Honors, grants and awards
+  # - name: Achievements
+  #   entries:
+  #     - description: "General overview of the honors, grands and awards you have received along your career"
+  #       details:
+  #         - "Award name #1 (Date #1)"
+  #         - "Award name #2 (Date #2)"
+
+  - name: Education
+    entries:
+      - what: Franklin & Marshall College
+        when: May 2010
+        where: Lancaster, PA
+        description: Bachelor of Arts
+        details:
+          - "Major:  Mathematics, Minor:  Computer Science"

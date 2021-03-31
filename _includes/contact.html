@@ -1,63 +1,63 @@
 <div class="contact-container container-block">
   <ul class="list-unstyled contact-list">
 
-    {% if sidebar.email %}
+    {% if site.data.resume.contact.email %}
     <li class="email"><i class="fas fa-envelope"></i>
-      <a href="mailto:{{ sidebar.email }}">{{ sidebar.email }}</a>
+      <a href="mailto:{{ site.data.resume.contact.email }}">{{ site.data.resume.contact.email }}</a>
     </li>
     {% endif %}
 
-    {% if sidebar.phone %}
+    {% if site.data.resume.contact.phone %}
     <li class="phone"><i class="fas fa-phone"></i>
-      <a href="tel:{{ sidebar.phone }}">{{ sidebar.phone }}</a>
+      <a href="tel:{{ site.data.resume.contact.phone }}">{{ site.data.resume.contact.phone }}</a>
     </li>
     {% endif %}
 
-    {% if sidebar.website %}
-    <li class="website"><i class="fas fa-globe-americas"></i>
-      <a href="http://{{ sidebar.website }}" target="_blank">{{ sidebar.website }}</a>
+    {% if site.data.resume.contact.webpage %}
+    <li class="webpage"><i class="fas fa-globe-americas"></i>
+      <a href="{{ site.data.resume.contact.webpage.url }}" target="_blank">{{ site.data.resume.contact.webpage.name }}</a>
     </li>
     {% endif %}
 
-    {% if sidebar.linkedin %}
+    {% if site.data.resume.contact.linkedin %}
     <li class="linkedin"><i class="fab fa-linkedin"></i>
-      <a href="https://linkedin.com/in/{{ sidebar.linkedin }}" target="_blank">{{ sidebar.linkedin }}</a>
+      <a href="{{ site.data.resume.contact.linkedin.url }}" target="_blank">{{ site.data.resume.contact.linkedin.name }}</a>
     </li>
     {% endif %}
 
-    {% if sidebar.github %}
+    {% if site.data.resume.contact.github %}
     <li class="github"><i class="fab fa-github"></i>
-      <a href="http://github.com/{{ sidebar.github }}" target="_blank">{{ sidebar.github }}</a>
+      <a href="{{ site.data.resume.contact.github.url }}" target="_blank">{{ site.data.resume.contact.github.name }}</a>
     </li>
     {% endif %}
 
-    {% if sidebar.gitlab %}
+    {% if site.data.resume.contact.gitlab %}
     <li class="gitlab"><i class="fab fa-gitlab"></i>
-      <a href="http://gitlab.com/{{ sidebar.gitlab }}" target="_blank">{{ sidebar.gitlab }}</a>
+      <a href="http://gitlab.com/{{ site.data.resume.contact.gitlab }}" target="_blank">{{ site.data.resume.contact.gitlab }}</a>
     </li>
     {% endif %}
 
-    {% if sidebar.bitbucket %}
+    {% if site.data.resume.contact.bitbucket %}
     <li class="bitbucket"><i class="fab fa-bitbucket"></i>
-      <a href="http://bitbucket.com/{{ sidebar.bitbucket }}" target="_blank">{{ sidebar.bitbucket }}</a>
+      <a href="http://bitbucket.com/{{ site.data.resume.contact.bitbucket }}" target="_blank">{{ site.data.resume.contact.bitbucket }}</a>
     </li>
     {% endif %}
 
-    {% if sidebar.twitter %}
+    {% if site.data.resume.contact.twitter %}
     <li class="twitter"><i class="fab fa-twitter"></i>
-      <a href="https://twitter.com/{{ sidebar.twitter }}" target="_blank">{{ sidebar.twitter }}</a>
+      <a href="https://twitter.com/{{ site.data.resume.contact.twitter }}" target="_blank">{{ site.data.resume.contact.twitter }}</a>
     </li>
     {% endif %}
 
-    {% if sidebar.stack-overflow %}
+    {% if site.data.resume.contact.stack-overflow %}
     <li class="stack-overflow"><i class="fab fa-stack-overflow"></i>
-      <a href="https://stackoverflow.com/users/{{ sidebar.stack-overflow }}" target="_blank">{{ sidebar.stack-overflow }}</a>
+      <a href="https://stackoverflow.com/users/{{ site.data.resume.contact.stack-overflow }}" target="_blank">{{ site.data.resume.contact.stack-overflow }}</a>
     </li>
     {% endif %}
 
-    {% if sidebar.codewars %}
+    {% if site.data.resume.contact.codewars %}
     <li class="codewars"><i class="fas fa-code"></i>
-      <a href="https://www.codewars.com/users/{{ sidebar.codewars }}/completed_solutions" target="_blank">{{ sidebar.codewars }}</a>
+      <a href="https://www.codewars.com/users/{{ site.data.resume.contact.codewars }}/completed_solutions" target="_blank">{{ site.data.resume.contact.codewars }}</a>
     </li>
     {% endif %}
 

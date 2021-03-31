@@ -1,4 +1,4 @@
-{% assign experiences = site.data.data.experiences %}
+{% assign experiences = site.data.resume.sections | find: "name", "Experience" %}
 {% if experiences %}
 <section class="section experiences-section">
   <h2 class="section-title">
@@ -9,29 +9,29 @@
     Experiences
   </h2>
 
-  {% for experience in experiences %}
+  {% for experience in experiences.entries %}
   <div class="item">
 
     <div class="meta">
 
       <div class="upper-row">
-        <h3 class="job-title">{{ experience.role }}</h3>
-        <div class="time">{{ experience.time }}</div>
+        <h3 class="job-title">{{ experience.what }}</h3>
+        <div class="time">{{ experience.when }}</div>
       </div><!--//upper-row-->
-
-      <div class="company">{{ experience.company }}</div>
+      {% if experience.where %}
+      <div class="company">{{ experience.where }} - {{ experience.location }}</div>
+      {% endif %}
 
     </div><!--//meta-->
 
-    {% if experience.details %}
-    <div class="details">
-      {{ experience.details | markdownify }}
-    </div><!--//details-->
-    {% endif %}
+    <ul class="details">
+    {% for e in experience.details %}
+      <li>{{ e }}</li>
+    {% endfor %}
+    </ul><!--//details-->
 
   </div><!--//item-->
   {% endfor %}
 
 </section><!--//section-->
 {% endif %}
-
